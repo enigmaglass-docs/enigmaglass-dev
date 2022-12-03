@@ -205,7 +205,7 @@
   },"34": {
     "doc": "Home",
     "title": "Enigma Glass Training Materials",
-    "content": "Welcome to the Enigma Glass training resource. Here you’ll find: . | System documentation for the Enigma Glass platform | Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform, including follow-along friendly case studies to explore what you can do with Enigma Glass in its current state | . A paragraph . This is a mermaid diagram . graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; . graph TD A[Client] --&gt; B[Load Balancer] A[Client] --&gt; F[Proxy] F --&gt; B[Load Balancer] B --&gt; C[Server01] B --&gt; D[Server02] . ",
+    "content": "Welcome to the Enigma Glass training resource. Here you’ll find: . | System documentation for the Enigma Glass platform | Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform, including follow-along friendly case studies to explore what you can do with Enigma Glass in its current state | . A paragraph . This is the development version of the Enigma Glass documentation. Click here to go to the most up to date version of this page. This is a mermaid diagram: . graph TD A[Client] --&gt; B[Load Balancer] A[Client] --&gt; F[Proxy] F --&gt; B[Load Balancer] B --&gt; C[Server01] B --&gt; D[Server02] . ",
     "url": "/#enigma-glass-training-materials",
     "relUrl": "/#enigma-glass-training-materials"
   },"35": {

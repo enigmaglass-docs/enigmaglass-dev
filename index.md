@@ -19,15 +19,10 @@ Welcome to the Enigma Glass training resource. Here you'll find:
 > A paragraph
 > </div>
 
-This is a mermaid diagram
+This is the development version of the Enigma Glass documentation. [Click here](https://enigmaglass-docs.github.io/enigmaglass/) to go to the most up to date version of this page.
+{: .warning}
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+This is a mermaid diagram:
 
 ```mermaid
 graph TD
@@ -37,3 +32,4 @@ graph TD
     B --> C[Server01]
     B --> D[Server02]
 ```
+{: .mx-auto}
