@@ -1,0 +1,314 @@
+{"0": {
+    "doc": "Additional Resources",
+    "title": "Additional Resources",
+    "content": ". | Additional Resources . | Overview: Threats | What is the CIA Triad? . | Confidentiality | Integrity | Availability | . | What Are Insider Threats? . | Types of Insider Threats | Mitigating Insider Threats | . | . | . ",
+    "url": "/training/additional_resources/",
+    "relUrl": "/training/additional_resources/"
+  },"1": {
+    "doc": "Additional Resources",
+    "title": "Overview: Threats",
+    "content": "Some additional things to consider when beginning to utilize the SIEM are what threats look like through a less technical view. One of the purposes the SIEM serves is managing what is known as the CIA triad revolving around data and data protection. ",
+    "url": "/training/additional_resources/#overview-threats",
+    "relUrl": "/training/additional_resources/#overview-threats"
+  },"2": {
+    "doc": "Additional Resources",
+    "title": "What is the CIA Triad?",
+    "content": "The CIA stands for confidentiality, integrity, and availability. The CIA triad is a model that is designed to guide organizations with their data security. It is meant to be used as a tool that helps guide organizations as they build a security strategy and develop security policies. Confidentiality . Confidentiality is the principle that ensures data and information are kept secret and secure from those that are not meant to know of or have access to. This is important because without assured privacy and security all data would be accessible to anyone at any given time. With this principle, only those with authorized access will be able to access data that is secure. This principle helps guide individuals with securing data by implementing permissions, authentication, and authorization controls within their organization. Integrity . Integrity is the principle the ensures data is consistent, accurate, reliable, and secure. Integrity ensures data in transit or at rest is not tampered with or modified in any way by any unauthorized individuals. Availability . Availability is the principle that ensures data is available and accessible to authorized individuals while remaining secure and inaccessible for those without access. ",
+    "url": "/training/additional_resources/#what-is-the-cia-triad",
+    "relUrl": "/training/additional_resources/#what-is-the-cia-triad"
+  },"3": {
+    "doc": "Additional Resources",
+    "title": "What Are Insider Threats?",
+    "content": "An insider threat is the potential for an inside person to use their authorized access or understanding of an organization to harm that organization. This can include malicious acts that negatively affect the integrity, confidentiality, and availability of the organization, its data, personnel, or facilities. The following are behaviors/actions typical of insider threats: . | Espionage | Terrorism | Unauthorized disclosure of information | Corruption, including participation in transnational organized crime | Sabotage | Workplace violence | Intentional or unintentional loss or degradation of departmental resources or capabilities | . Types of Insider Threats . Unintentional Threats - An insider who either acts with negligence or carelessness often fall under this category. These individuals do not attempt to create a risk on purpose or maliciously. But instead create an unintended risk by mistake. These mistakes are not always preventable as sometimes mistakes like mis-clicks can occur. Intentional Threats - An insider who creates risk intentionally would fall under this category as the individual in this case is acting with malicious intent. The motivation is usually specific to the individual, but company sabotage is usually the end goal. For example, many insiders are motivated to “get even” due to unmet expectations related to a lack of recognition (e.g., promotion, bonuses, desirable travel) or even termination. Their actions include leaking sensitive information, harassing associates, sabotaging equipment, or perpetrating violence. Others have stolen proprietary data or intellectual property in the false hope of advancing their careers. Other Threats - Insider threats can come in many forms, so it’s hard to create an exhaustive list. However, some other threats to be aware of include collusive threats and third-party threats. | Collusive Threats are when more than one insider are working together with a similar goal of hurting the organization. | Third Party Threats are threats who are from outside the company, with temporary access to the inside of the organization. | . Mitigating Insider Threats . | Define - Determine what an insider is as well as the many forms it can take on | Detect &amp; Identify - Using both human and technological elements, monitor and identify potential threats | Assess - Using all known information, follow the response plan that aligns with the scenario | Manage - Continue to be proactive and manage a threat or potential threat | . ",
+    "url": "/training/additional_resources/#what-are-insider-threats",
+    "relUrl": "/training/additional_resources/#what-are-insider-threats"
+  },"4": {
+    "doc": "Alerts",
+    "title": "Alerts",
+    "content": "On this page, there are four different rules that have been set up. If one of these rules is met, then the user will be alerted and an event will be added underneath the corresponding rule. If an event is categorized as either high or critical severity, it will automatically alert the user. In addition, if a medium severity alert occurs 3 times in 1 minute, an alert will also go off. Clicking on any of the Alerts/Rule Names will expand the table. In the newly revealed table, there is a plethora of additional information that the user can use to investigate the event. There is also a ribbon containing each event that has triggered the alert. ",
+    "url": "/documentation/tools/alerts/",
+    "relUrl": "/documentation/tools/alerts/"
+  },"5": {
+    "doc": "Analyze Apache Access Logs with Elastic",
+    "title": "Analyze Apache Access Logs with Elastic",
+    "content": ". | Overview | Environment | See it in action . | Apache Access Log | Logging Agent Configuration | Generating Logs | Apache Log Event | Events in Aggregate | Visualizing Data | Dashboards | Drilling Down | . | Conclusion | Read more | . ",
+    "url": "/training/analyze_apache_logs/",
+    "relUrl": "/training/analyze_apache_logs/"
+  },"6": {
+    "doc": "Analyze Apache Access Logs with Elastic",
+    "title": "Overview",
+    "content": "The Elastic stack is a collection of open-source tools for managing and analyzing data. It includes Elasticsearch, a search and analytics engine, and Kibana, a tool for visualizing and analyzing data. The Elastic stack is widely used for log analysis; for example, many organizations use it to process and analyze their Apache access logs. This guide to analyzing Apache access logs with the Elastic stack provides context for understanding the benefits of the Enigma Glass platform, which is a SIEM solution built using the Elastic stack. SIEM solutions like Enigma Glass ingest all kinds of logs using small “agent” processes that run on devices. These agents can watch log files for changes, filter additions using software defined rules, and intelligently serve relevant data as json to a key-store index running somewhere else. The communication between the agents and the server can be TLS encrypted, which makes it possible to securely ingest logs from edge devices on entirely different networks. Agents are highly configurable and can be customized to support any application that logs to a file. The connection log of a single Apache webserver is enough data to create some really interesting visualizations and see some bad actors in action. ",
+    "url": "/training/analyze_apache_logs/#overview",
+    "relUrl": "/training/analyze_apache_logs/#overview"
+  },"7": {
+    "doc": "Analyze Apache Access Logs with Elastic",
+    "title": "Environment",
+    "content": "Linode Virtual Private Compute provider Ubuntu Server Operating System Apache2 Webserver Logstash Log ingestion service - Elastic Product Elasticsearch Key store database that stores logs and elastic configuration - Elastic Product Kibana Frontend for Elasticsearch to visualize data - Elastic Product ",
+    "url": "/training/analyze_apache_logs/#environment",
+    "relUrl": "/training/analyze_apache_logs/#environment"
+  },"8": {
+    "doc": "Analyze Apache Access Logs with Elastic",
+    "title": "See it in action",
+    "content": "Apache Access Log . Below you can see the contents of the access.log file that is stored in logging directory of the Apache server. Every web request that the webserver receives is logged here as text. Each message contains a timestamp that can be used to index the log event. An Apache access log is a file that records information about client requests made to an Apache web server. The log records a range of information about each request, including the IP address of the client, the time of the request, the request method (e.g. GET or POST), the requested resource, the HTTP response code, and the size of the response. To read an Apache access log, you will need to open the log file in a text editor or a specialized log analysis tool. The log file is typically organized as a series of lines, with each line representing a single request. Each line contains a number of fields, separated by spaces or other delimiters, that provide information about the request. For example, a typical Apache access log entry might look like this: . 10.0.0.1 - - [30/Sep/2018:12:34:56 -0400] \"GET /index.html HTTP/1.1\" 200 1234 . In this example, the first field is the IP address of the client that made the request. The second and third fields are not used in this log format, so they are typically left blank. The fourth field shows the time of the request, including the date, time, and time zone. The fifth field shows the request method (GET) and the requested resource (/index.html). The sixth field shows the HTTP response code (200), which indicates that the request was successful. The final field shows the size of the response (1234 bytes). To make it easier to read and analyze Apache access logs, you can use a log analysis tool that can parse the log entries and display them in a more user-friendly format. These tools often allow you to filter and search the log entries, and to generate reports and charts that provide insights into the server’s traffic and performance. Logging Agent Configuration . Logstash is a tool for managing and analyzing log data. Logstash uses configuration files to specify the data sources and outputs for log data, as well as any filters or transformations that should be applied to the data. An Apache.conf file is a Logstash configuration file that is used to process Apache access log data. The configuration file specifies the location of the Apache access log files, the format of the log entries, and any filters or transformations that should be applied to the data. Here is an example of a simple Apache.conf file that can be used to process Apache access log data: . input { file { path =&gt; \"/var/log/apache/access.log\" type =&gt; \"apache\" } } filter { grok { match =&gt; { \"message\" =&gt; \"%{COMBINEDAPACHELOG}\" } } } output { stdout { codec =&gt; rubydebug } elasticsearch { hosts =&gt; [\"localhost:9200\"] } } . In this example, the input section specifies that the Apache access log files are located in the /var/log/apache directory, and that the log entries have the “apache” type. The filter section uses the grok filter to parse the log entries and extract the individual fields. The output section specifies that the processed log data should be written to the standard output (stdout) and to an Elasticsearch instance running on localhost. This is just a basic example of a Logstash configuration file for Apache access logs. In a real-world scenario, you might want to customize the configuration further to add additional filters or transformations, or to output the log data to other destinations. Below is the contents of /etc/logstash/conf.d/apache.conf on our server, which stores the filtering rules that inform the pipeline on how to format the data in the json it’s sending to the Elastic server, and where to look for the logs. Note that we’re mapping the clientip field to the type geoip . This tells the Elastic server to take the ip address data from the log event and populate additional geo fields to add to the event json that can give us coordinates for the ip. You can read more about GeoIP in the Elastic Stack here. Generating Logs . Now that Elastic is configured to ingest logs from our webserver, we can generate a few logs by visiting the site in a browser. Here is what our simple website looks like: . As you can see, our site is very basic. Our connection to the site is not encrypted with TLS. The only security measures that’ve been taken on the webserver are the configuration of a firewall and access hardening (only accept ssh keys and only allow ssh connections from my home network’s external IP address). Apache Log Event . Kibana is a tool for visualizing and analyzing data. It is often used in combination with Elasticsearch, a search and analytics engine, to provide a graphical user interface for working with log data. In Kibana, an Apache log event is a record of a request made to an Apache web server. The log event contains a range of information about the request, such as the IP address of the client, the time of the request, the request method, the requested resource, the HTTP response code, and the size of the response. Apache log events are typically displayed in a table or list format in Kibana. Each log event is represented by a single row in the table, with the different fields of the event displayed in separate columns. For example, an Apache log event in Kibana on our server looks like this: . Events in Aggregate . The Discover page in Kibana is a tool for searching and analyzing log data. It allows users to view, filter, and query log events in real-time, as well as to generate charts and other visualizations to gain insights into the data. To analyze log events on the Discover page of Kibana, users can start by selecting the data source for the log events. This might be a specific index in Elasticsearch, a saved search, or another data source. Once the data source has been selected, users can use the search bar at the top of the page to enter search queries to filter the log events. For example, a user might enter a query like this to filter the log events by response code: . response_code:200 . This query would return only log events that have a response code of 200, which indicates that the request was successful. Users can also use wildcards, regular expressions, and other query operators to create more complex search queries. Once the log events have been filtered, users can view the results on the Discover page. The log events are displayed in a table or list format, with each event represented by a single row. Users can click on individual log events to view more detailed information about them, or they can use the fields on the left side of the page to select which fields should be displayed in the table. In addition to viewing the log events, users can also use the Discover page to generate charts and other visualizations. For example, users can use the histogram visualization to view the distribution of log events over time, or they can use a pie chart to view the breakdown of log events by response code. These visualizations can help users identify trends and patterns in the data and gain insights into the server’s traffic and performance. Here is what the discover page looks like on our server: . You might think that the only log events we should see here are the ones that were generated when we visited the site in the browser, but here we can see that there are already more requests from other external ip addresses. Who are these people? . Visualizing Data . Data can be visualized in charts or graphs for aggregate analysis. Users can apply filters to the visualizations that change the scope of time and any other field in the event json. HTTP response status codes are returned by the webserver to the client to indicate whether the request has been completed successfully. The 5 major classes of status codes are: . | Status Code | Class | . | 100 - 199 | Informational responses | . | 200 - 299 | Sucessful responses | . | 300 - 399 | Redirection messages | . | 400 - 499 | Client error responses | . | 500 - 599 | Server error responses | . Here you can see a pie chart displaying the different status codes that have been received by the server in the last 7 days. The webserver has been running for ~4 days at this point. It looks like status the code that is returned the most is 200, followed by 404. Here’s what these codes mean: . | Status Code | Meaning | . | 200 | OK - The meaning of this code depends on the HTTP method, but this generally means that the request was sucessful. | . | 400 | Bad Request - The server is either incapable or unwilling to process the request due to a client error, like malformed syntax or deceptive request routing. | . | 404 | Not Found - The server cannot find the requested resource; the page does not exist | . | 408 | Request Timeout - The server would like to close an idle connection. | . 27.52% of the requests that our webserver has receive up until this point have returned 404, or “Not Found”. Whoever is making these requests seems to be trying to access a page that does not exist on the server. Data visualizations can be a valuable tool when seeking to answer quick questions like “What are the most common HTTP methods that are used in our web requests?” . The HTTP method that is used to make the request determines the action to be performed on the resource that is identified by the path in the request url. | HTTP Method | Meaning | . | GET | Used to retrieve data from a specified resource in the webserver. This is the request that’s used when you visit a page in your browser. | . | POST | Used to send data to the webserver to create or update a resource. | . | CONNECT | Used to establish a tunnel to the server indentified by the URL. | . | PRI | Used when the server receives a request that it is not set up to handle. | . | HEAD | Used to retrieve the metadata that is associated with a URL without the message body in the response, which would contain the page content in a GET request. | . | OPTIONS | Used to retreive the the permitted communication options for a URL or server. | . We can use a treemap visualization to take a look at the most common resources that are requested (using the path in the URL) for each response code that is returned for all POST requests the webserver has received: . This visualization was created by selecting the response.keyword and request.keyword fields to group by and filtering the log events to be passed to the visualization to POST requests. We can see that the most frequently requested resource to POST to on our webserver has a path of /boaform/admin/formLogin. A quick Google search of this path yields this article that suggests that what we might be seeing here is a botnet searching for vulnerable fiber optic routers. We can take a closer look at these requests in the Discover section with some filters: . How do these servers know that our server is running a webserver? Most likely, they don’t. Malicious actors iterate through external ip addresses with requests based on known existing security vulnerabilities. Most of the time they will not receive a successful response, but botnets can contain hundreds of thousands of infected nodes. Even a very low success rate can be very profitable depending on the vulnerability. A botnet is a network of compromised computers that are controlled by a single attacker. The attacker can use the botnet to carry out various malicious activities, such as distributing spam or launching distributed denial of service (DDoS) attacks. Security infrastructure and event management software can detect and mitigate botnet threats in several ways. For example, the software can monitor network traffic for signs of botnet activity, such as large numbers of requests coming from a single IP address or unusual patterns of traffic. The software can also monitor for known indicators of botnet activity, such as specific commands or communication protocols that are used by botnets. Once a botnet has been detected, security infrastructure and event management software can take steps to mitigate the threat. This might involve blocking the botnet’s communication channels, isolating infected computers from the network, or taking other steps to prevent the botnet from carrying out further malicious activities. In addition to detecting and mitigating botnet threats, security infrastructure and event management software can also help organizations prevent botnet infections in the first place. This might involve implementing security measures such as firewalls, intrusion prevention systems, and network segmentation to make it more difficult for botnets to gain access to an organization’s systems. Regular security updates and patches can also help prevent botnet infections by closing known vulnerabilities in an organization’s systems. Dashboards . Dashboards are a key feature of many security infrastructure and event management software systems. A dashboard is a graphical user interface (GUI) that provides a real-time, high-level overview of an organization’s security posture. The function of dashboards in security infrastructure and event management software is to provide security personnel with a quick and easy way to monitor the state of an organization’s security systems. This can help security personnel identify potential threats and respond to them in a timely manner. Typically, dashboards in security infrastructure and event management software display a range of information about an organization’s security systems, such as the number of security alerts that have been generated, the number of security incidents that have occurred, and the status of various security tools and systems. The dashboard might also display information about the current state of the network, such as the number of active connections and the amount of traffic flowing through the network. In some cases, dashboards in security infrastructure and event management software might also provide tools for security personnel to take action to respond to potential threats. For example, the dashboard might allow security personnel to view detailed logs or reports, run security scans, or deploy security tools to prevent or mitigate potential threats. Data visualizations can be collected in dashboards to allow users to see visualizations that can be made up of data from a variety of sources. Below is a screenshot of an example overview dashboard that a webmaster might user to monitor the perfomance of their Apache server. This dashboard contains a few interesting visualizations using geo data from the log events. Drilling Down . “Drilling down” is a term used in the context of security infrastructure and event management software to describe the process of investigating a particular security event or incident in more detail. When security personnel are monitoring an organization’s security systems, they may come across a security event or incident that warrants further investigation. For example, they might see an alert indicating that a particular IP address is sending a large number of suspicious requests to a web server. In this case, they can “drill down” into the event or incident by looking at more detailed information about the event, such as the specific requests that were made, the source and destination of the requests, and any other relevant details. To “drill down” into a security event or incident, security personnel can use the tools and features provided by the security infrastructure and event management software. This might involve using the dashboard to view more detailed information about the event, using search and filter tools to find relevant log entries, or using other tools to collect and analyze data about the event. The goal of “drilling down” into a security event or incident is to gather as much information as possible about the event and its potential impact. This can help security personnel understand the nature and severity of the event and can provide them with the information they need to take appropriate action to prevent or mitigate the event. Ultimately, “drilling down” into security events and incidents can help organizations improve their security posture and better protect themselves against potential threats. «««&lt; HEAD:training/analyze_apache_logs.md In this screenshot example, the user has “drilled down” on the client country visualisation by selecting the United States. This dashboard was created to display various geo data, but by drlling down through the webmaster dashboard a filter has been applied that only populates the visualisations with events from the United States. ======= In this screenshot example, the user has “drilled down” on the client country visualization by selecting the United States. This dashboard was created to display various geo data, but by drilling down through the webmaster dashboard a filter has been applied that only populates the visualizations with events from the United States. eaeb1a7af0861f34763ce4640795c732b771b267:training/analyze_apache_logs/index.md . This dashboard has been created to display information regarding post requests made to the server. By selecting the part of the treemap that represents the 50% of requests that are targeting that boaform path, we can drill down into the geo data dashboard that we saw before with some filters applied to only show us log events that are associated with that path. ",
+    "url": "/training/analyze_apache_logs/#see-it-in-action",
+    "relUrl": "/training/analyze_apache_logs/#see-it-in-action"
+  },"9": {
+    "doc": "Analyze Apache Access Logs with Elastic",
+    "title": "Conclusion",
+    "content": "This training document has explained to use the Elastic stack to process, search, and visualize Apache access logs. It has also provided examples of how to use the various tools in the stack to gain insights into the server’s traffic and performance. By reading the guide, users can learn how the Elastic stack can be used to analyze Apache access logs and gain insights into their data. This can provide context for understanding the capabilities of the Enigma Glass platform, which is built using the Elastic stack and provides similar features and functionality for analyzing log data. ",
+    "url": "/training/analyze_apache_logs/#conclusion",
+    "relUrl": "/training/analyze_apache_logs/#conclusion"
+  },"10": {
+    "doc": "Analyze Apache Access Logs with Elastic",
+    "title": "Read more",
+    "content": ". | Visualize Apache Logs With Elastic Stack on Ubuntu 18.04 - Linode Guide | . ",
+    "url": "/training/analyze_apache_logs/#read-more",
+    "relUrl": "/training/analyze_apache_logs/#read-more"
+  },"11": {
+    "doc": "Components of SIEM",
+    "title": "Components of SIEM",
+    "content": ". | Components of SIEM platform . | Data Aggregation | Security Data Analytics | Correlation and Security Event Monitoring | Forensic Analysis | Incident Detection and Response | Real-time Event Response or Alerting Console | Threat Intelligence | User and Entity Behaviour Analytics (UEBA) | IT Compliance Management | . | Read more | . ",
+    "url": "/training/components-of-siem/",
+    "relUrl": "/training/components-of-siem/"
+  },"12": {
+    "doc": "Components of SIEM",
+    "title": "Components of SIEM platform",
+    "content": "Security infrastructure and event management (SIEM) is a category of security software that helps organizations monitor, manage, and respond to security threats and events. SIEM systems typically consist of several functional components, including data aggregation, security data analytics, correlation and security event monitoring, forensic analysis, incident detection and response, real-time event response or alerting, threat intelligence, user and entity behavior analytics (UEBA), and IT compliance management. These components work together to provide organizations with a comprehensive view of their security posture, and to enable them to quickly identify and respond to potential threats. A SIEM solution may cover all or only some of these components. Security concerns vary from company to company, and some features are only used by government systems or where they are required by law. Data Aggregation . Data Aggregation is the process of collecting data from multiple sources and organizing it into a centralized repository. This allows security analysts to have a comprehensive view of the data and make more informed decisions. There are three major log collection methods: . | Agent-based log collection | . In agent-based log collection, an agent is installed to ingest logs from a file. This doesn’t require whatever is generating the logs to support logging directly to your database; instead a separate process watches for changes to the file and sends the data to your database in a secure manner. | Agentless log collection | . Agentless log collection is possible where the application that is producing the logs supports integrating with your SIEM platform directly. Basically, the agent’s job is wrapped up into the existing application. | API-based log collection | . In API-based log collection, logs can be collected from network devices using an application programming interface (API) to collect the logs from the server using a process running on an entirely separate server. This separate server can then process the data it receives through the API and send it through to your database. Security Data Analytics . Security Data Analytics is the use of data analysis techniques to identify trends, patterns, and anomalies in security-related data. This can help organizations detect and respond to potential security threats in a timely manner. Correlation and Security Event Monitoring . Correlation is the process of identifying relationships between different data sets. In the context of security event management, this might involve identifying connections between different security events or between security events and other types of data, such as user activity logs, using predefined rules or machine learning. Maintaining these predefined rules is a never-ending task as new vulnerabilities and attack vectors surface daily, so this is one of the benefits of paying for a managed SIEM solution as opposed to developing one from scratch. Forensic Analysis . Forensic Analysis is the process of collecting and analyzing data to identify the cause of a security incident and determine what happened. This is often used after an incident has occurred to help organizations understand how the incident happened and prevent similar incidents from occurring in the future. Root cause analysis and incident reports are foundational job duties for Security Engineers. SIEM platforms make that much easier by allowing the user to “drill down” through logs of a breach or attack after the fact to determine exactly how the bad actor was able to gain access to the system. This component of SIEM is often legally mandated. Incident Detection and Response . Incident Detection and Response involves detecting security incidents and responding to them in a timely and effective manner. This might involve deploying security tools to prevent or mitigate the incident or taking other steps to minimize the impact of the incident. A security incident is an attempted or successful data breach in the corporate network by a bad actor. SIEM platforms detect security incidents as they happen using event correlation, user, and entity behavior analytics (UEBA), and threat intelligence. Once the incident has been identified, many SIEM platforms support not only triggering alerts but automated actions to neutralize the threat using predefined workflows. This component of SIEM allows companies to lower their mean time to detect and resolve incidents. Real-time Event Response or Alerting Console . Real-time Event Response or Alerting Console is a tool that allows security personnel to monitor and respond to security events in real-time. This might involve displaying alerts and providing information about potential threats, as well as providing tools for security personnel to take action to mitigate the threat. Threat Intelligence . Threat Intelligence is information about current and emerging security threats that can help organizations protect themselves against those threats. This might include information about specific attack tactics, techniques, and procedures that are being used by threat actors, as well as information about potential vulnerabilities in an organization’s systems. There are many public and private threat intelligence feeds that can be used to obtain the contextual information that is require to identify potential security issues in the corporate system before they are exploited. SIEM platforms can aggregate these threat intelligence feeds and provide an environment where they can be compared to the current state of the network to identify potential security vulnerabilities. User and Entity Behaviour Analytics (UEBA) . User and Entity Behaviour Analytics (UEBA) is a type of security analytics that involves analyzing user and entity behavior to identify potential security threats. This might involve analyzing data such as user activity logs and network traffic to identify unusual or suspicious behavior that could indicate a security threat. One common form of UEBA is to train a behavior model that represents the normal operation of the corporate network. Once this baseline is set, alerts can be triggered when the network activity deviates too far from the normal behavior model. These anomalies can then be investigated further or dealt with using predefined automated rules. UEBA differs from a correlation engine because it is not rule based. Instead, it relies on behavioral analytics. IT Compliance Management . IT Compliance Management involves ensuring that an organization’s information technology systems comply with relevant laws, regulations, and standards. This might involve implementing policies and procedures to ensure that systems are secure, and that sensitive data is protected, as well as regularly auditing systems to ensure compliance. Most companies are expected to meet certain regulations regarding data security. These regulations vary by industry and region, but normally there are fines associated with noncompliance. Many of the components that have been covered here are required by some regulations. Companies may also need to comply with security audits by third party entities. SIEM platforms allow companies to prepare for these audits and know that they will pass ahead of time. ",
+    "url": "/training/components-of-siem/#components-of-siem-platform",
+    "relUrl": "/training/components-of-siem/#components-of-siem-platform"
+  },"13": {
+    "doc": "Components of SIEM",
+    "title": "Read more",
+    "content": ". | SIEM Components | . ",
+    "url": "/training/components-of-siem/#read-more",
+    "relUrl": "/training/components-of-siem/#read-more"
+  },"14": {
+    "doc": "Data Integrity",
+    "title": "Data Integrity",
+    "content": "Students will use this case study to learn about data integrity and the risks associated with data integrity loss. Students will also learn how the Enigma Glass platform can be used to detect data integrity issues, and how to mitigate the impact and risk of these issues. Download Doc . ",
+    "url": "/case-studies/data-integrity/",
+    "relUrl": "/case-studies/data-integrity/"
+  },"15": {
+    "doc": "Discover",
+    "title": "Using the Discover Tool",
+    "content": "Each of the widgets are laid out in a similar way in order to ensure ease of use for the user. Each widget will have a corresponding graph or visual tool at the top of the page. Underneath that, they share 4 tiles that include “Number of Total Hits”, “Total hits on…”, “Daily Percent Change”, and “Weekly Percent Change”. The “Total hits on…” tile allows for customization by the user. The user can sort through information using one of eleven different filters, such as data, event type, hostname, etc. So, if the user were to select external IP, the next dropdown would include all available IP addresses to choose from. Then it will calculate the number of hits from that IP address. The next two tiles both deal with calculating both the daily and weekly percentage change for the total number of hits. At the bottom of the page, the user will find the actual discover panel. Here it shows in-depth information about each security event that has occurred. You can either page through this data with the arrows at the bottom or change the total number of items per page, next to the arrows. The user can do a quick search from the search bar in the top right. This is just a simple search field that allows users to quickly find something specific they are looking for. For example, if a user is looking for an IP that contains 237, they can type that into the search bar and filter through. There is, however, an advanced search option as well. The main benefit of this option is that you can search multiple strings at once. For example, if you are looking for a specific IP address that has high severity, you can type both of those in and they will search as different strings. Enigma Glass also gives you the option to select which columns to view at once, through a dropdown with checkboxes. It also allows you to export data to 5 different data types including CSV, JSON, and XLS. ",
+    "url": "/documentation/tools/discover/#using-the-discover-tool",
+    "relUrl": "/documentation/tools/discover/#using-the-discover-tool"
+  },"16": {
+    "doc": "Discover",
+    "title": "Discover",
+    "content": " ",
+    "url": "/documentation/tools/discover/",
+    "relUrl": "/documentation/tools/discover/"
+  },"17": {
+    "doc": "The Elastic Stack",
+    "title": "The Elastic Stack",
+    "content": ". | Overview | Elasticsearch | Logstash . | Beats | . | Kibana | Elastic as a SIEM tool | Using Elasticsearch &amp; Kibana for Security Analytics to Fight the Dark Army on Mr. Robot | . ",
+    "url": "/training/elastic/",
+    "relUrl": "/training/elastic/"
+  },"18": {
+    "doc": "The Elastic Stack",
+    "title": "Overview",
+    "content": "The Elastic Stack, formerly known as the ELK Stack, is a collection of open-source tools that are typically used together to help analyze and visualize data. The components of the Elastic Stack include Elasticsearch, Logstash, and Kibana. Enigma Glass has been built using this software stack. The Elastic Stack consists of four major components: . ",
+    "url": "/training/elastic/#overview",
+    "relUrl": "/training/elastic/#overview"
+  },"19": {
+    "doc": "The Elastic Stack",
+    "title": "Elasticsearch",
+    "content": "Elasticsearch is a search and analytics engine that is used to store, search, and analyze large volumes of data quickly and in near real time. It is a distributed, RESTful search and analytics engine that is built on top of Apache Lucene. ",
+    "url": "/training/elastic/#elasticsearch",
+    "relUrl": "/training/elastic/#elasticsearch"
+  },"20": {
+    "doc": "The Elastic Stack",
+    "title": "Logstash",
+    "content": "Logstash is a data processing pipeline that ingests data from a variety of sources, transforms it, and then sends it to a store like Elasticsearch. It is often used to collect, parse, and transform logs, but it can be used to process other types of data as well. Beats . Beats are small agent processes that can run on edge devices that collects logs and sends them to Logstash. ",
+    "url": "/training/elastic/#logstash",
+    "relUrl": "/training/elastic/#logstash"
+  },"21": {
+    "doc": "The Elastic Stack",
+    "title": "Kibana",
+    "content": "Kibana is a visualization tool that is used to analyze and explore data stored in Elasticsearch. It provides a user-friendly interface that allows users to create and save custom dashboards that display data in a variety of formats, such as tables, maps, and graphs. It can also export visualizations as components that can be embedded in any webpage. ",
+    "url": "/training/elastic/#kibana",
+    "relUrl": "/training/elastic/#kibana"
+  },"22": {
+    "doc": "The Elastic Stack",
+    "title": "Elastic as a SIEM tool",
+    "content": "In the context of security infrastructure and event management, these components of the Elastic Stack can be used together to collect, store, and analyze log data from various sources, such as servers, security devices, and applications. This can help security teams to detect and investigate potential security threats, as well as to monitor the overall health and security of their systems. Additionally, the visualization capabilities of Kibana can be used to create dashboards that provide a real-time view of security-related data, helping security teams to quickly identify and respond to potential security incidents. ",
+    "url": "/training/elastic/#elastic-as-a-siem-tool",
+    "relUrl": "/training/elastic/#elastic-as-a-siem-tool"
+  },"23": {
+    "doc": "The Elastic Stack",
+    "title": "Using Elasticsearch &amp; Kibana for Security Analytics to Fight the Dark Army on Mr. Robot",
+    "content": "~5 min . ",
+    "url": "/training/elastic/#using-elasticsearch--kibana-for-security-analytics-to-fight-the-dark-army-on-mr-robot",
+    "relUrl": "/training/elastic/#using-elasticsearch--kibana-for-security-analytics-to-fight-the-dark-army-on-mr-robot"
+  },"24": {
+    "doc": "False Positives",
+    "title": "False Positives",
+    "content": "Students will use this case study to learn about false positives, and how to determine if an alert is genuine or a false positive. Students will also learn how to use the Enigma Glass platform to view alerts and determine their validity. Download Doc . ",
+    "url": "/case-studies/false-positives/",
+    "relUrl": "/case-studies/false-positives/"
+  },"25": {
+    "doc": "Training Materials",
+    "title": "Training Materials",
+    "content": "The Enigma Glass platform is a powerful security infrastructure and event management (SIEM) solution that is built using the Elastic stack. This collection of training materials is designed to provide users with the context they need to understand both the benefits of the Enigma Glass platform and how it operates. The training materials include an overview of the Elastic stack, an overview of the components of SIEM, a guide to analyzing Apache logs with the Elastic stack, and additional resources. By reading these materials, users can learn how the Enigma Glass platform can help them monitor, manage, and respond to security threats and events, and how it uses the Elastic stack to provide powerful analytics and visualization capabilities. ",
+    "url": "/training/",
+    "relUrl": "/training/"
+  },"26": {
+    "doc": "Integrations",
+    "title": "Integrations",
+    "content": " ",
+    "url": "/documentation/integrations/",
+    "relUrl": "/documentation/integrations/"
+  },"27": {
+    "doc": "Insights",
+    "title": "Insights",
+    "content": " ",
+    "url": "/documentation/insights/",
+    "relUrl": "/documentation/insights/"
+  },"28": {
+    "doc": "Tools",
+    "title": "Tools",
+    "content": " ",
+    "url": "/documentation/tools/",
+    "relUrl": "/documentation/tools/"
+  },"29": {
+    "doc": "Documentation",
+    "title": "Enigma Glass Platform Documentation",
+    "content": " ",
+    "url": "/documentation/#enigma-glass-platform-documentation",
+    "relUrl": "/documentation/#enigma-glass-platform-documentation"
+  },"30": {
+    "doc": "Documentation",
+    "title": "Disclaimer",
+    "content": "Some aspects or tools within Enigma Glass did not appear within this documentation as they are still under active development. This section will drill down into every aspect of Enigma Glass in hopes of providing an easy-to-use resource that can be used to understand the workings of this platform. This resource will be laid out in the order that sections show up on the platform, starting with security events and ending with log insight. The objectives of this section are: . | To provide the user with the basic information they need in order to navigate Enigma Glass | To provide an organized document that can be used as a reference at any time | . ",
+    "url": "/documentation/#disclaimer",
+    "relUrl": "/documentation/#disclaimer"
+  },"31": {
+    "doc": "Documentation",
+    "title": "Documentation",
+    "content": " ",
+    "url": "/documentation/",
+    "relUrl": "/documentation/"
+  },"32": {
+    "doc": "Enigma Glass Case Studies",
+    "title": "Enigma Glass Case Studies",
+    "content": "These Case Studies utilize data already on the Enigma Glass platform, and recontextualizes this data to fit in with each unique investigation. Students are provided with the background scenario, and then are tasked with navigating the SIEM to investigate and search for evidence of insider threats, data integrity issues, and false positives. Throughout the Case Studies, students are asked questions to track their progress and challenge them to think critically. Each case study ends with research questions aimed at increasing student knowledge and awareness of the threats and finishes with a threat intelligence report that tasks students with summarizing what they have done, and what they have learned in this case study. ",
+    "url": "/case-studies/",
+    "relUrl": "/case-studies/"
+  },"33": {
+    "doc": "Enigma Glass Case Studies",
+    "title": "Threat Intelligence Report Template",
+    "content": "| Category | Description | Hint | . | Event (general - what type of event occurred against your organization) |   | Quick overview of the event. You can find this information in in the alerts pane of Enigma Glass and through your analysis | . | Target |   | You can find this information in the alerts pane of Enigma Glass | . | Attack Type |   | Internet Research; What type of campaign was this? | . | Remediation Actions |   | Read the following article to determine remediation actions | . | Preventative Actions (Lessons Learned) |   | QInternet Research: List some potential security measures that could prevent this type of event | . ",
+    "url": "/case-studies/#threat-intelligence-report-template",
+    "relUrl": "/case-studies/#threat-intelligence-report-template"
+  },"34": {
+    "doc": "Home",
+    "title": "Enigma Glass Training Materials",
+    "content": "This is the development version of the Enigma Glass documentation. Click here to go to the most up to date version of this page. Welcome to the Enigma Glass training resource. Here you’ll find: . | System documentation for the Enigma Glass platform | Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform, including follow-along friendly case studies to explore what you can do with Enigma Glass in its current state | . ",
+    "url": "/#enigma-glass-training-materials",
+    "relUrl": "/#enigma-glass-training-materials"
+  },"35": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    "relUrl": "/"
+  },"36": {
+    "doc": "Insider Threat",
+    "title": "Insider Threat",
+    "content": "Students will use this case study to gain an understanding of the threats posed by attacks occurring from inside a company, and to understand how Enigma Glass can be used to detect these threats and mitigate the impact of these attacks. Download Doc Download Powerpoint . ",
+    "url": "/case-studies/insider-threat/",
+    "relUrl": "/case-studies/insider-threat/"
+  },"37": {
+    "doc": "Log Insights",
+    "title": "Using the Log Insights Tool",
+    "content": "The Log Insights tab keeps a log of alerts that went off due to clients being geo blocked. Currently this is done with geographic restrictions using CloudFront. The user can click on the log type box in the top left to see that Cloudflare and cognito are planned to be added in the future. The Allow IPs option can be used to let specific IPs access the service, even if they are normally geo blocked. Under the Delivered section are the logs of each client that was geo blocked. This list can be refreshed by clicking on the icon next to the delivered title. Additionally, any of the entries may be expanded to see more information about the event. The final tool on this page is the Integrations tool. It uses a Webhook URL (which in simple terms can be thought of as an address to communicate with an app), to integrate Enigma Glass with Slack. This will allow users to get Slack notifications automatically, without having to log into Enigma Glass. There are plans to also add email and SMS support in the future. ",
+    "url": "/documentation/tools/log-insights/#using-the-log-insights-tool",
+    "relUrl": "/documentation/tools/log-insights/#using-the-log-insights-tool"
+  },"38": {
+    "doc": "Log Insights",
+    "title": "Log Insights",
+    "content": " ",
+    "url": "/documentation/tools/log-insights/",
+    "relUrl": "/documentation/tools/log-insights/"
+  },"39": {
+    "doc": "Network Activity Insight",
+    "title": "Network Activity Insight",
+    "content": "Coming soon . ",
+    "url": "/documentation/insights/network-activity/",
+    "relUrl": "/documentation/insights/network-activity/"
+  },"40": {
+    "doc": "Network Activity Tool",
+    "title": "Network Activity Tool",
+    "content": "The network activity tab is a visualization tool present within Enigma Glass. Multicolored lines will appear on the world map indicating where an attack originated and the target of the attack. Highlighting one of these lines will pull up an informational box. This box includes information such as the country of origin, the target country, the type of attack, the port attacked, and the time of the attack. In the top left, there are map controls such as fullscreen and zooming in and out. The user can also zoom in and out via the scroll wheel and pan around the map by holding down the left mouse button. This tool is also known as “Logon Activity.” . ",
+    "url": "/documentation/tools/network-activity/",
+    "relUrl": "/documentation/tools/network-activity/"
+  },"41": {
+    "doc": "Notification Webhook",
+    "title": "Notification Webhook",
+    "content": "Coming soon . ",
+    "url": "/documentation/integrations/notif-webhook/",
+    "relUrl": "/documentation/integrations/notif-webhook/"
+  },"42": {
+    "doc": "Powershell",
+    "title": "Powershell",
+    "content": "Coming soon . ",
+    "url": "/documentation/insights/powershell/",
+    "relUrl": "/documentation/insights/powershell/"
+  },"43": {
+    "doc": "Security Events",
+    "title": "Security Events",
+    "content": ". | Quarantine Failure | Threat Quarantined | Vulnerable Application Detected | The Security Events | Top Security Alerts | Top Users Triggering AV Alerts | Antivirus Events Over Time (Cisco AMP) | . Under the home screen of the Security Events tab, one can find multiple widgets available to assist users in monitoring security events on the network. The widgets consist of: Quarantine Failure, Threat Quarantined, Vulnerable Application Detected, Cloud IOC, Security Events, Top Security Alerts, Top Users Triggering AV Alerts, DNS Trends (Cisco Umbrella), and Antivirus Events Over Time (Cisco AMP). The home screen offers a quick visual for administrators to monitor events quickly through the efficient use of graphs to break down specifics such as Top Security Alerts. There are currently 9 different widgets available when you open security events from the dashboard. Each one works similarly to the other; in that, you have the option to “Choose Timeframes” and “Discover.” . The choose timeframes option allows you to choose between 14 different intervals. These intervals will determine the timeframe of the data that the infographic will show. For example, if you have it set to a half-hour, the infographic will only show data that was gathered in the last half-hour. It is also worth noting that the currently selected option is highlighted in blue. The Discover option is a bit more complex. Choosing this option will take you to a new page with more information about the widget as shown below. This page will show you the corresponding infographic as well as the total number of hits for that category. In this example, there were 55 total discovered security events. ",
+    "url": "/documentation/insights/security-events/",
+    "relUrl": "/documentation/insights/security-events/"
+  },"44": {
+    "doc": "Security Events",
+    "title": "Quarantine Failure",
+    "content": "This widget is responsible for centralizing all known data related to quarantine failures occurring on workstations across the network. Quarantining is when a file that was supposed to be temporarily neutralized to protect the system. When this quarantine fails, it can potentially put the system at risk. ",
+    "url": "/documentation/insights/security-events/#quarantine-failure",
+    "relUrl": "/documentation/insights/security-events/#quarantine-failure"
+  },"45": {
+    "doc": "Security Events",
+    "title": "Threat Quarantined",
+    "content": "This section deals with files that have been successfully quarantined. This section can be used to deal with the threats within these files and potentially release them from quarantine. ",
+    "url": "/documentation/insights/security-events/#threat-quarantined",
+    "relUrl": "/documentation/insights/security-events/#threat-quarantined"
+  },"46": {
+    "doc": "Security Events",
+    "title": "Vulnerable Application Detected",
+    "content": "This section tracks applications and categorizes them if they are deemed vulnerable. Vulnerable applications are any programs that contain backdoors or other exploitable loopholes that could be used to access or disrupt the system. ",
+    "url": "/documentation/insights/security-events/#vulnerable-application-detected",
+    "relUrl": "/documentation/insights/security-events/#vulnerable-application-detected"
+  },"47": {
+    "doc": "Security Events",
+    "title": "The Security Events",
+    "content": "The security events tab contains a lot of important information. A security event can be described as unusual activity that could potentially cause harm or unintended access to a system. This page aggregates the data from these activities and categorizes them by how much of a threat they are (high, medium, or low). ",
+    "url": "/documentation/insights/security-events/#the-security-events",
+    "relUrl": "/documentation/insights/security-events/#the-security-events"
+  },"48": {
+    "doc": "Security Events",
+    "title": "Top Security Alerts",
+    "content": "Similar to the Security Events widget, the Top Security Alerts widget categorizes the events by severity: Low, Medium, High, and Critical. ",
+    "url": "/documentation/insights/security-events/#top-security-alerts",
+    "relUrl": "/documentation/insights/security-events/#top-security-alerts"
+  },"49": {
+    "doc": "Security Events",
+    "title": "Top Users Triggering AV Alerts",
+    "content": "This widget is used for tracking which user account or system is responsible for triggering the antivirus alerts. The information from this section can be used to decide whether or not employees need more training, or even if there is a risk of an insider threat. ",
+    "url": "/documentation/insights/security-events/#top-users-triggering-av-alerts",
+    "relUrl": "/documentation/insights/security-events/#top-users-triggering-av-alerts"
+  },"50": {
+    "doc": "Security Events",
+    "title": "Antivirus Events Over Time (Cisco AMP)",
+    "content": "This is a fairly simple section. It aggregates the information from every type of antivirus event. This includes events listed above such as a quarantine failure, threat detected, malware executed, etc. ",
+    "url": "/documentation/insights/security-events/#antivirus-events-over-time-cisco-amp",
+    "relUrl": "/documentation/insights/security-events/#antivirus-events-over-time-cisco-amp"
+  },"51": {
+    "doc": "User Behavior",
+    "title": "User Behavior",
+    "content": "Coming soon . ",
+    "url": "/documentation/insights/user-behavior/",
+    "relUrl": "/documentation/insights/user-behavior/"
+  }
+}
