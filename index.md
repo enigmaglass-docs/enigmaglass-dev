@@ -10,4 +10,5 @@ permalink: /
 
 Welcome to the Enigma Glass training resource. Here you'll find:
  - System documentation for the Enigma Glass platform
- - Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform, including follow-along friendly case studies to explore what you can do with Enigma Glass in its current state
+ - Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform, including follow-along friendly case studies to explore what you can do with Enigma Glass in its current state{: .important }
+> This is the development version of the site. The production site can be accessed [here](https://enigmadocs.npole.org/).
