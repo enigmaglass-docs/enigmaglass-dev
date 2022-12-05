@@ -231,13 +231,8 @@ To "drill down" into a security event or incident, security personnel can use th
 
 The goal of "drilling down" into a security event or incident is to gather as much information as possible about the event and its potential impact. This can help security personnel understand the nature and severity of the event and can provide them with the information they need to take appropriate action to prevent or mitigate the event. Ultimately, "drilling down" into security events and incidents can help organizations improve their security posture and better protect themselves against potential threats.
 
-<<<<<<< HEAD:training/analyze_apache_logs.md
 In this screenshot example, the user has "drilled down" on the client country visualisation by selecting the United States. This dashboard was created to display various geo data, but by drlling down through the webmaster dashboard a filter has been applied that only populates the visualisations with events from the United States.
 ![Drill down dashboard](../assets/geo-dashboard-drilldown.png)
-=======
-In this screenshot example, the user has "drilled down" on the client country visualization by selecting the United States. This dashboard was created to display various geo data, but by drilling down through the webmaster dashboard a filter has been applied that only populates the visualizations with events from the United States.
-![Drill down dashboard](./assets/geo-dashboard-drilldown.png)
->>>>>>> eaeb1a7af0861f34763ce4640795c732b771b267:training/analyze_apache_logs/index.md
 
 This dashboard has been created to display information regarding post requests made to the server.
 
