@@ -15,43 +15,102 @@ The site is intended to be served by Jekyll; it was built using a gem theme call
 
 When the site is built a search index is created to be used by Lunr.js to support the site's full-text search functionality. The search runs as clientside javascript, but as this is a small static site the search is still lightning fast.
 
-## Development Flow
-1. Create feature branch off of develop
+## Development
+1. Clone repository to your local machine:
 
 ```bash
-git checkout -b feature/my-cool-feature develop
+git clone git@github.com:enigmaglass-docs/enigmaglass.git
+
+cd enigmaglass
+
+git checkout development
 ```
 
-2. Make you changes and test them locally.
+![clone repo to local](https://github.com/enigmaglass-docs/.github/blob/main/profile//assets/gif/clone-repo-checkout-development.gif)
+
+2. Checkout feature branch and create draft pull request into `development`:
 
 ```bash
-# run site locally (you must have Ruby and Jekyll installed)
+git checkout -b feature/{YOUR_FEATURE_NAME_HERE}
+```
+
+Now you can make you changes to this branch. When you want to save your changes you can commit and push them to the remote server (Github).
+
+```bash
+# see your status
+git status
+
+# add all changes
+git add .
+
+# commit your changes
+git commit -m "this is a commit message"
+
+# push your branch to the remote
+git push -u origin feature/{YOUR_FEATURE_NAME_HERE}
+
+# NOTE: after you push your local branch to the remote it will track the remote, so you can just run
+# git push
+```
+
+Once your local branch has been pushed to the remote server on Github, you can create a draft pull request into the `development` branch to review your changes. You can comment here with links to resources or notes for yourself as you work.
+
+![create feature branch and pr](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/create-feature-branch-and-pr.gif)
+
+3. Test your changes locally:
+
+```bash
+# you must have Ruby and Jekyll installed
 
 `bundle install`
 
 `bundle exec jekyll serve --livereload`
 ```
 
-3. Create a pull request to merge your branch with `develop`.
+![test changes locally](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/test-changes-locally.gif)
 
-This pr will trigger [the Pheonix deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-pr.yml) which creates a shortlived repository that is owned by the enigmaglass-docs organization before deploying a build of your branch to that repo. Your version of the site will then be served at it's own external URL.
+4. Once you're happy with your changes locally you can test your changes using the Pheonix deploy by setting your pull request status as `Ready for Review`.
 
-This stage is usefull for getting an idea of what your changes will look like if you can't run the site locally, or if you want to verify that the site behaves as it should when deployed on github pages. These workflow runs are aggregated in [the pr-staging environment](https://github.com/enigmaglass-docs/enigmaglass/deployments/activity_log?environment=pr-staging).
+**Note: Draft pull requests into `development` that are marked as `Ready for Review` will automatically be built and deployed with Github Pages using [the Pheonix Build and Deploy workflow](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-pr.yml). This workflow can also be run manually on any branch. When the pull request is closed [the Delete Pheonix Deployment workflow](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/delete-deploy-pr.yml) will delete the short-lived repository that was created to host the Github Pages site.**
 
-The Pheonix deploy is entireley optional.
+![mark pr ready for review](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/mark-pr-ready-start-pheonix-deploy.gif)
 
 [![Pheonix Build and Deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-pr.yml/badge.svg)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-pr.yml)
 
-4. Once you've tested what you want to in the Pheonix stage and your pull request has at least 1 approval you can complete the pr into `develop`.
+5. Once the Pheonix deploy has completed, click `View Deployment` to see you site being served by Github Pages:
 
-A push to `develop` will trigger [the Development Build and Deploy workflow](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml) which will build the site and deploy it to [the enigmaglass-dev repository](https://github.com/enigmaglass-docs/enigmaglass-dev). The dev site can be accessed [here](https://enigmaglass-docs.github.io/enigmaglass-dev/).
+![view deployment](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/view-deployment.gif)
+
+6. When you're ready to promote your changes to `development` and your pull request has been approved, you can complete the pull request and delete your branch:
+
+![complete pr](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/merge-feature-branch-develop.gif)
+
+7. Approve the deployment to the `development` environment:
+
+![approve development deploy](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/approve-development-deploy.gif)
 
 [![Development Build and Deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml/badge.svg?branch=development)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml)
 
-5. To complete the contribution and update the production site, create a pull request merging `develop` into `master`. In order to merge into `master` you will need 1 pr approval, [the development environment](https://github.com/enigmaglass-docs/enigmaglass/deployments/activity_log?environment=development) must be successfuly deployed to. The Development build pipeline can be run manually from any branch to deploy that version of the site to the development environment.
+8. Verify that your changes are correct and the site is functioning as it should in the `development` environment:
 
-![workflow dispatch event trigger](./assets/workflow_dispatch_trigger.png)
+![view dev site](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/view-dev-site.gif)
 
-Your push into `master` will trigger [the Github pages build and deploy workflow](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment) that deploys to [the github pages environment](https://github.com/enigmaglass-docs/enigmaglass/deployments/activity_log?environment=github-pages).
+9. Create a pull request to promote your changes from `development` to `main` to update the production site:
 
-[![pages-build-deployment](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment)
+![dev to main pr](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/dev-to-main-pr.gif)
+
+10. Once all tests have passed and your pull request has been approved, complete the pull request:
+
+![complete pull request into main](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/complete-pull-request-into-main.gif)
+
+11. Approve the production deployment to the `github-pages`environment:
+
+![approve prod deploy](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/approve-prod-deploy.gif)
+
+[![pages-build-deployment](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment)
+
+12. Verify that your changes were successfully deployed to the production `github-pages` environment:
+
+![verify prod deploy](https://github.com/enigmaglass-docs/.github/blob/main/profile/assets/gif/verify-prod-deploy.gif)
+
+That's it! You've successfully update the site!
