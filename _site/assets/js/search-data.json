@@ -155,168 +155,150 @@
     "url": "/training/",
     "relUrl": "/training/"
   },"26": {
-    "doc": "Integrations",
-    "title": "Integrations",
-    "content": " ",
-    "url": "/documentation/integrations/",
-    "relUrl": "/documentation/integrations/"
-  },"27": {
-    "doc": "Insights",
-    "title": "Insights",
-    "content": " ",
-    "url": "/documentation/insights/",
-    "relUrl": "/documentation/insights/"
-  },"28": {
-    "doc": "Tools",
-    "title": "Tools",
-    "content": " ",
-    "url": "/documentation/tools/",
-    "relUrl": "/documentation/tools/"
-  },"29": {
-    "doc": "Documentation",
-    "title": "Enigma Glass Platform Documentation",
-    "content": " ",
-    "url": "/documentation/#enigma-glass-platform-documentation",
-    "relUrl": "/documentation/#enigma-glass-platform-documentation"
-  },"30": {
-    "doc": "Documentation",
-    "title": "Disclaimer",
-    "content": "Some aspects or tools within Enigma Glass did not appear within this documentation as they are still under active development. This section will drill down into every aspect of Enigma Glass in hopes of providing an easy-to-use resource that can be used to understand the workings of this platform. This resource will be laid out in the order that sections show up on the platform, starting with security events and ending with log insight. The objectives of this section are: . | To provide the user with the basic information they need in order to navigate Enigma Glass | To provide an organized document that can be used as a reference at any time | . ",
-    "url": "/documentation/#disclaimer",
-    "relUrl": "/documentation/#disclaimer"
-  },"31": {
-    "doc": "Documentation",
-    "title": "Documentation",
-    "content": " ",
-    "url": "/documentation/",
-    "relUrl": "/documentation/"
-  },"32": {
     "doc": "Enigma Glass Case Studies",
     "title": "Enigma Glass Case Studies",
     "content": "These Case Studies utilize data already on the Enigma Glass platform, and recontextualizes this data to fit in with each unique investigation. Students are provided with the background scenario, and then are tasked with navigating the SIEM to investigate and search for evidence of insider threats, data integrity issues, and false positives. Throughout the Case Studies, students are asked questions to track their progress and challenge them to think critically. Each case study ends with research questions aimed at increasing student knowledge and awareness of the threats and finishes with a threat intelligence report that tasks students with summarizing what they have done, and what they have learned in this case study. ",
     "url": "/case-studies/",
     "relUrl": "/case-studies/"
-  },"33": {
+  },"27": {
     "doc": "Enigma Glass Case Studies",
     "title": "Threat Intelligence Report Template",
     "content": "| Category | Description | Hint | . | Event (general - what type of event occurred against your organization) |   | Quick overview of the event. You can find this information in in the alerts pane of Enigma Glass and through your analysis | . | Target |   | You can find this information in the alerts pane of Enigma Glass | . | Attack Type |   | Internet Research; What type of campaign was this? | . | Remediation Actions |   | Read the following article to determine remediation actions | . | Preventative Actions (Lessons Learned) |   | QInternet Research: List some potential security measures that could prevent this type of event | . ",
     "url": "/case-studies/#threat-intelligence-report-template",
     "relUrl": "/case-studies/#threat-intelligence-report-template"
-  },"34": {
+  },"28": {
+    "doc": "Insights",
+    "title": "Insights",
+    "content": " ",
+    "url": "/documentation/insights/",
+    "relUrl": "/documentation/insights/"
+  },"29": {
+    "doc": "Tools",
+    "title": "Tools",
+    "content": " ",
+    "url": "/documentation/tools/",
+    "relUrl": "/documentation/tools/"
+  },"30": {
+    "doc": "Integrations",
+    "title": "Integrations",
+    "content": " ",
+    "url": "/documentation/integrations/",
+    "relUrl": "/documentation/integrations/"
+  },"31": {
+    "doc": "Documentation",
+    "title": "Enigma Glass Platform Documentation",
+    "content": "Some aspects or tools within Enigma Glass are not covered within this documentation as they are still under active development. This section will drill down into every aspect of Enigma Glass in hopes of providing an easy-to-use resource that can be used to understand the workings of this platform. This resource will be laid out in the order that sections show up on the platform, starting with security events and ending with log insight. The objectives of this section are: . | To provide the user with the basic information they need in order to navigate Enigma Glass | To provide an organized document that can be used as a reference at any time | . ",
+    "url": "/documentation/#enigma-glass-platform-documentation",
+    "relUrl": "/documentation/#enigma-glass-platform-documentation"
+  },"32": {
+    "doc": "Documentation",
+    "title": "Documentation",
+    "content": " ",
+    "url": "/documentation/",
+    "relUrl": "/documentation/"
+  },"33": {
     "doc": "Home",
     "title": "Enigma Glass Training Materials",
-    "content": "Welcome to the Enigma Glass training resource. Here you’ll find: . | System documentation for the Enigma Glass platform | Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform, including follow-along friendly case studies to explore what you can do with Enigma Glass in its current state | . # Site Development . ## Project Status . | Branch | Live Site | Test Status | CICD Status | . | main | Production Site | | | . | development | Development Site | | | . ",
+    "content": "Welcome to the Enigma Glass training resource. Here you’ll find: . | System documentation for the Enigma Glass platform | Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform, including follow-along friendly case studies to explore what you can do with Enigma Glass in its current state | . ",
     "url": "/#enigma-glass-training-materials",
     "relUrl": "/#enigma-glass-training-materials"
-  },"35": {
-    "doc": "Home",
-    "title": "Project Overview",
-    "content": "Welcome to the Enigma Glass training resource. This site has been designed to provide a framework that Enigma Glass or other students can continue to build on. The major factor that informed our design decisions was ease of development and integration. This project has been setup in a way that attempts to make it as easy as possible to contribute to. The site content development work is done mostly in markdown, but the site can be customized with HTML, CSS, and JS. Due to the include / override nature of Ruby on Rails and Gems, the site will run well and look good without anything other than markdown. This project deploys to three distinct environments and features automated build and deploy workflows, in addition to automated testing and dependency scanning. The site is intended to be served by Jekyll; it was built using a gem theme called just-the-docs. When the site is built Jekyll parses all of the markdown files in the directory looking for templating tags and markdown. It then outputs the _site directory which contains the static HTML / CSS / JS for the site. When the site is built a search index is created to be used by Lunr.js to support the site’s full-text search functionality. The search runs as clientside javascript, but as this is a small static site the search is still lightning fast. ",
-    "url": "/#project-overview",
-    "relUrl": "/#project-overview"
-  },"36": {
-    "doc": "Home",
-    "title": "Development",
-    "content": ". | Clone repository to your local machine: | . git clone git@github.com:enigmaglass-docs/enigmaglass.git cd enigmaglass git checkout development . | Checkout feature branch and create draft pull request into development: | . git checkout -b feature/{YOUR_FEATURE_NAME_HERE} . Now you can make you changes to this branch. When you want to save your changes you can commit and push them to the remote server (Github). # see your status git status # add all changes git add . # commit your changes git commit -m \"this is a commit message\" # push your branch to the remote git push -u origin feature/{YOUR_FEATURE_NAME_HERE} # NOTE: after you push your local branch to the remote it will track the remote, so you can just run # git push . Once your local branch has been pushed to the remote server on Github, you can create a draft pull request into the development branch to review your changes. You can comment here with links to resources or notes for yourself as you work. | Test your changes locally: | . # you must have Ruby and Jekyll installed `bundle install` `bundle exec jekyll serve --livereload` . | Once you’re happy with your changes locally you can test your changes using the Pheonix deploy by setting your pull request status as Ready for Review. | . Note: Draft pull requests into development that are marked as Ready for Review will automatically be built and deployed with Github Pages using the Pheonix Build and Deploy workflow. This workflow can also be run manually on any branch. When the pull request is closed the Delete Pheonix Deployment workflow will delete the short-lived repository that was created to host the Github Pages site. . | Once the Pheonix deploy has completed, click View Deployment to see you site being served by Github Pages: | . | When you’re ready to promote your changes to development and your pull request has been approved, you can complete the pull request and delete your branch: | . | Approve the deployment to the development environment: | . | Verify that your changes are correct and the site is functioning as it should in the development environment: | . | Create a pull request to promote your changes from development to main to update the production site: | . | Once all tests have passed and your pull request has been approved, complete the pull request: | . | Approve the production deployment to the github-pagesenvironment: | . | Verify that your changes were successfully deployed to the production github-pages environment: | . That’s it! You’ve successfully update the site! . ",
-    "url": "/#development",
-    "relUrl": "/#development"
-  },"37": {
+  },"34": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     "relUrl": "/"
-  },"38": {
+  },"35": {
     "doc": "Insider Threat",
     "title": "Insider Threat",
     "content": "Students will use this case study to gain an understanding of the threats posed by attacks occurring from inside a company, and to understand how Enigma Glass can be used to detect these threats and mitigate the impact of these attacks. Download Doc Download Powerpoint . ",
     "url": "/case-studies/insider-threat/",
     "relUrl": "/case-studies/insider-threat/"
-  },"39": {
+  },"36": {
     "doc": "Log Insights",
     "title": "Using the Log Insights Tool",
     "content": "The Log Insights tab keeps a log of alerts that went off due to clients being geo blocked. Currently this is done with geographic restrictions using CloudFront. The user can click on the log type box in the top left to see that Cloudflare and cognito are planned to be added in the future. The Allow IPs option can be used to let specific IPs access the service, even if they are normally geo blocked. Under the Delivered section are the logs of each client that was geo blocked. This list can be refreshed by clicking on the icon next to the delivered title. Additionally, any of the entries may be expanded to see more information about the event. The final tool on this page is the Integrations tool. It uses a Webhook URL (which in simple terms can be thought of as an address to communicate with an app), to integrate Enigma Glass with Slack. This will allow users to get Slack notifications automatically, without having to log into Enigma Glass. There are plans to also add email and SMS support in the future. ",
     "url": "/documentation/tools/log-insights/#using-the-log-insights-tool",
     "relUrl": "/documentation/tools/log-insights/#using-the-log-insights-tool"
-  },"40": {
+  },"37": {
     "doc": "Log Insights",
     "title": "Log Insights",
     "content": " ",
     "url": "/documentation/tools/log-insights/",
     "relUrl": "/documentation/tools/log-insights/"
-  },"41": {
+  },"38": {
     "doc": "Network Activity Insight",
     "title": "Network Activity Insight",
     "content": "Coming soon . ",
     "url": "/documentation/insights/network-activity/",
     "relUrl": "/documentation/insights/network-activity/"
-  },"42": {
+  },"39": {
     "doc": "Network Activity Tool",
     "title": "Network Activity Tool",
     "content": "The network activity tab is a visualization tool present within Enigma Glass. Multicolored lines will appear on the world map indicating where an attack originated and the target of the attack. Highlighting one of these lines will pull up an informational box. This box includes information such as the country of origin, the target country, the type of attack, the port attacked, and the time of the attack. In the top left, there are map controls such as fullscreen and zooming in and out. The user can also zoom in and out via the scroll wheel and pan around the map by holding down the left mouse button. This tool is also known as “Logon Activity.” . ",
     "url": "/documentation/tools/network-activity/",
     "relUrl": "/documentation/tools/network-activity/"
-  },"43": {
+  },"40": {
     "doc": "Notification Webhook",
     "title": "Notification Webhook",
     "content": "Coming soon . ",
     "url": "/documentation/integrations/notif-webhook/",
     "relUrl": "/documentation/integrations/notif-webhook/"
-  },"44": {
+  },"41": {
     "doc": "Powershell",
     "title": "Powershell",
     "content": "Coming soon . ",
     "url": "/documentation/insights/powershell/",
     "relUrl": "/documentation/insights/powershell/"
-  },"45": {
+  },"42": {
     "doc": "Security Events",
     "title": "Security Events",
     "content": ". | Quarantine Failure | Threat Quarantined | Vulnerable Application Detected | The Security Events | Top Security Alerts | Top Users Triggering AV Alerts | Antivirus Events Over Time (Cisco AMP) | . Under the home screen of the Security Events tab, one can find multiple widgets available to assist users in monitoring security events on the network. The widgets consist of: Quarantine Failure, Threat Quarantined, Vulnerable Application Detected, Cloud IOC, Security Events, Top Security Alerts, Top Users Triggering AV Alerts, DNS Trends (Cisco Umbrella), and Antivirus Events Over Time (Cisco AMP). The home screen offers a quick visual for administrators to monitor events quickly through the efficient use of graphs to break down specifics such as Top Security Alerts. There are currently 9 different widgets available when you open security events from the dashboard. Each one works similarly to the other; in that, you have the option to “Choose Timeframes” and “Discover.” . The choose timeframes option allows you to choose between 14 different intervals. These intervals will determine the timeframe of the data that the infographic will show. For example, if you have it set to a half-hour, the infographic will only show data that was gathered in the last half-hour. It is also worth noting that the currently selected option is highlighted in blue. The Discover option is a bit more complex. Choosing this option will take you to a new page with more information about the widget as shown below. This page will show you the corresponding infographic as well as the total number of hits for that category. In this example, there were 55 total discovered security events. ",
     "url": "/documentation/insights/security-events/",
     "relUrl": "/documentation/insights/security-events/"
-  },"46": {
+  },"43": {
     "doc": "Security Events",
     "title": "Quarantine Failure",
     "content": "This widget is responsible for centralizing all known data related to quarantine failures occurring on workstations across the network. Quarantining is when a file that was supposed to be temporarily neutralized to protect the system. When this quarantine fails, it can potentially put the system at risk. ",
     "url": "/documentation/insights/security-events/#quarantine-failure",
     "relUrl": "/documentation/insights/security-events/#quarantine-failure"
-  },"47": {
+  },"44": {
     "doc": "Security Events",
     "title": "Threat Quarantined",
     "content": "This section deals with files that have been successfully quarantined. This section can be used to deal with the threats within these files and potentially release them from quarantine. ",
     "url": "/documentation/insights/security-events/#threat-quarantined",
     "relUrl": "/documentation/insights/security-events/#threat-quarantined"
-  },"48": {
+  },"45": {
     "doc": "Security Events",
     "title": "Vulnerable Application Detected",
     "content": "This section tracks applications and categorizes them if they are deemed vulnerable. Vulnerable applications are any programs that contain backdoors or other exploitable loopholes that could be used to access or disrupt the system. ",
     "url": "/documentation/insights/security-events/#vulnerable-application-detected",
     "relUrl": "/documentation/insights/security-events/#vulnerable-application-detected"
-  },"49": {
+  },"46": {
     "doc": "Security Events",
     "title": "The Security Events",
     "content": "The security events tab contains a lot of important information. A security event can be described as unusual activity that could potentially cause harm or unintended access to a system. This page aggregates the data from these activities and categorizes them by how much of a threat they are (high, medium, or low). ",
     "url": "/documentation/insights/security-events/#the-security-events",
     "relUrl": "/documentation/insights/security-events/#the-security-events"
-  },"50": {
+  },"47": {
     "doc": "Security Events",
     "title": "Top Security Alerts",
     "content": "Similar to the Security Events widget, the Top Security Alerts widget categorizes the events by severity: Low, Medium, High, and Critical. ",
     "url": "/documentation/insights/security-events/#top-security-alerts",
     "relUrl": "/documentation/insights/security-events/#top-security-alerts"
-  },"51": {
+  },"48": {
     "doc": "Security Events",
     "title": "Top Users Triggering AV Alerts",
     "content": "This widget is used for tracking which user account or system is responsible for triggering the antivirus alerts. The information from this section can be used to decide whether or not employees need more training, or even if there is a risk of an insider threat. ",
     "url": "/documentation/insights/security-events/#top-users-triggering-av-alerts",
     "relUrl": "/documentation/insights/security-events/#top-users-triggering-av-alerts"
-  },"52": {
+  },"49": {
     "doc": "Security Events",
     "title": "Antivirus Events Over Time (Cisco AMP)",
     "content": "This is a fairly simple section. It aggregates the information from every type of antivirus event. This includes events listed above such as a quarantine failure, threat detected, malware executed, etc. ",
     "url": "/documentation/insights/security-events/#antivirus-events-over-time-cisco-amp",
     "relUrl": "/documentation/insights/security-events/#antivirus-events-over-time-cisco-amp"
-  },"53": {
+  },"50": {
     "doc": "User Behavior",
     "title": "User Behavior",
     "content": "Coming soon . ",
